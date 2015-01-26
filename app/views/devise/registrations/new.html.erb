@@ -7,7 +7,7 @@
 
     <%= f.input :email, required: true, autofocus: true, label:false, placeholder:"Email", class: "form-control" %>
     <%= f.input :password, required: true, autofocus: true, label:false, placeholder:"Password", class: "form-signin-heading" ,hint: ("#{@minimum_password_length} characters minimum" if @validatable) %>
-    <%= f.input :password_confirmation, required: true, autofocus: true, label:false, placeholder:"Email", class: "form-signin-heading" %>
+    <%= f.input :password_confirmation, required: true, autofocus: true, label:false, placeholder:"Password Confirmation", class: "form-signin-heading" %>
 
     <%= f.button :submit, "Sign up", class: "btn btn-lg btn-primary btn-block"%>
 	
