@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#paperclip
+gem 'paperclip', '~> 4.2.1'
 #cancan
 gem 'cancan', '~> 1.6.10'
 #devise
