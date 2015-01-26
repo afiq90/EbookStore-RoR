@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#cancan
+gem 'cancan', '~> 1.6.10'
 #devise
 gem 'devise'
 #simple form
