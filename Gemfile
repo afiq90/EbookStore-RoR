@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#aws
+gem 'aws-sdk'
 #dotenv
 gem 'dotenv-rails', group: :development
 #paperclip
