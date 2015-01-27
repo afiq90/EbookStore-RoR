@@ -1,13 +1,15 @@
-<div class="jumbotron">
-  <h1>Welcome to EbookStore</h1>
-  <p>The Largest Online Digital Bookstore</p>
-  <p>
-	  <%= link_to "Books", books_path, class: "btn btn-primary btn-lg", role: "button" %>
-	  <%= link_to "Signup", new_user_registration_path, class: "btn btn-primary btn-lg", role: "button" %>
-  </p>
+
+<div class="background-image">
+<div class="container">
+	<div class="col-lg-6 col-lg-offset-3">
+		<div class="jumbotron text-center">
+		<h2 class="uppercase">Welcome to our store</h2>
+		<p>The largest online Digital Books Store</p>
+			  <%= link_to "Books", books_path, class: "btn btn-primary btn-lg", role: "button" %>
+			  <%= link_to "Signup", new_user_registration_path, class: "btn btn-primary btn-lg", role: "button" %>
+		</div>
+	</div>
+	 <div class="clearfix"></div>
+	 <div class="row"><%= render @books %></div>
 </div>
-
-<div class="row">
-	<%= render @books%>
-
 </div>
