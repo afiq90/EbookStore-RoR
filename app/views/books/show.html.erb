@@ -7,7 +7,7 @@
   <strong><%= @book.name %> By <%= @book.author%><br/></strong>
   <%= @book.description %>  
 
-  <h2 class="text align">RM<%= @book.price.to_f/100 %></h2>
+  <h2 class="text align">$<%= @book.price.to_f/100 %></h2>
 
   <% if current_user %>
   <%= form_tag buy_path(slug: @book.slug) do %>
