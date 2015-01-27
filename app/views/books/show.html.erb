@@ -4,7 +4,7 @@
  </div>
   
  <div class="col-md-6">	
-  <%= @book.name %> <br/>
+  <strong><%= @book.name %> By <%= @book.author%><br/></strong>
   <%= @book.description %>  
 
   <h2 class="text align">RM<%= @book.price.to_f/100 %></h2>
