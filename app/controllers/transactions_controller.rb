@@ -1,4 +1,4 @@
-class TransactionController < ApplicationController
+class TransactionsController < ApplicationController
 
 	def create
 		book = Book.find_by!(slug: params[:slug])
@@ -6,16 +6,17 @@ class TransactionController < ApplicationController
 
 		begin
 			charge = Stripe::Charge.create(
-				amount: book.price
-				currency: "usd"
-				card: token
+				amount: book.price,
+				currency: "usd",
+				card: token,
 				description: book.description)
 			@sale = book.sales.create!(
 				buyer_email: current_user.email)
 			redirect_to pickup_url(guid: @sale.guid)
-		rescue: Stripe::CardError => e
+		rescue Stripe::CardError => e
 			@error = e
 			direct_to book_path(book), notice: error 
+		end
 			
 	end
 
