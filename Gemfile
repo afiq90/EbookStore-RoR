@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#aasm
+gem 'aasm'
 #stripe
 gem 'stripe'
 #friendly id
