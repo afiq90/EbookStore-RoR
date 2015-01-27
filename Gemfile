@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#friendly id
+gem 'friendly_id'
 #aws
 gem 'aws-sdk'
 #dotenv
