@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#stripe
+gem 'stripe'
 #friendly id
 gem 'friendly_id'
 #aws
