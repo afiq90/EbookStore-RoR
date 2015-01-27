@@ -1,5 +1,7 @@
 source 'https://rubygems.org'
 
+#dotenv
+gem 'dotenv-rails', group: :development
 #paperclip
 gem 'paperclip', '~> 4.2.1'
 #cancan
